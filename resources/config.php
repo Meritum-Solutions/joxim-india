@@ -12,19 +12,6 @@ defined("TEMPLATE_BACK") ? null : define("TEMPLATE_BACK", __DIR__ . DS . "templa
 // Universal variables
 $company = "Joxim India";
 
-
-//Server settings
-//$path = 'http://joximindia.com/';
-
-//defined('DB_HOST') ? null : define('DB_HOST', 'localhost');
-
-//define('DB_USER') ? null : define('DB_USER', 'joximindia');
-
-//defined('DB_PASS') ? null : define('DB_PASS', '+vUyNy=M3xVH');
-
-//defined('DB_NAME') ? null : define('DB_NAME', 'joximdb');
-
-
 // Localhost settings
  $path = '/projects/joxim/public/';
  
@@ -32,7 +19,7 @@ $company = "Joxim India";
 
  defined('DB_USER') ? null : define('DB_USER', 'root');
 
- defined('DB_PASS') ? null : define('DB_PASS', '');
+ defined('DB_PASS') ? null : define('DB_PASS', 'VAQ~r:0_Z2y|U|1=E,{p[RoazT.H<n0Z');
 
  defined('DB_NAME') ? null : define('DB_NAME', 'joxim');
 
