@@ -1,0 +1,274 @@
+/* For dropdown menu */
+
+@media only screen and (min-width: 992px) {
+    .sub-menu, .sub-menu2 {
+        position: absolute;
+        list-style: none;
+        z-index: 10;
+        opacity: 0;
+        visibility: hidden;
+        padding: 0;
+        top: 60px;
+    }
+    .sub-menu li, .sub-menu2 li {
+        padding: 0.5rem 1rem;
+        background-color: #f37021;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    .sub-menu li a, .sub-menu2 li a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+    }
+    .nav-item:hover .sub-menu, .nav-item:hover .sub-menu2 {
+        perspective: 1000px;
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-item:hover .sub-menu li, .nav-item:hover .sub-menu2 li {
+        opacity: 1;
+        visibility: visible;
+        animation: viewMenu 0.8s ease-in-out forwards;
+    }
+    .sub-menu li:hover, .sub-menu2 li:hover {
+        background-color: #fff;
+    }
+    .sub-menu li:hover a, .sub-menu2 li:hover a {
+        color: #151515;
+    }
+    @keyframes viewMenu {
+        0% {
+            opacity: 0;
+            transform: rotateX(-90deg);
+            transform-origin: top;
+        }
+        100% {
+            opacity: 1;
+            transform: rotateX(0deg);
+        }
+    }
+    .hidden-menu, .hidden-menu2 {
+        display: none!important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .dropdown-nav, .dropdown-nav2 {
+        position: relative;
+    }
+    .hidden-menu, .hidden-menu2 {
+        position: absolute;
+        top: 12px;
+        right: 15px;
+        color: #fff;
+        background: #f37021;
+       height: 25px;
+       width: 25px;
+       text-align: center;
+       line-height: 25px!important;
+       cursor: pointer;
+       display: block;
+    }
+    .sub-drop, .sub-drop2, .sub-menu, .sub-menu2 {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .sub-menu-small, .sub-menu2-small {
+        position: static;
+        list-style: none;
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+        padding: 0;
+        width: 100%;
+    }
+    .sub-menu-small li, .sub-menu2-small li {
+        padding: 0.5rem 1rem 0.5rem 2rem;
+        background-color: #f37021;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    .sub-menu-small li a, .sub-menu2-small li a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+    }
+    .sub-menu-small li:hover, .sub-menu-small2 li:hover {
+        background-color: #fff;
+    }
+    .sub-menu-small li:hover a, .sub-menu-small2 li:hover a {
+        color: #151515;
+    }
+    @keyframes viewMenu {
+        0% {
+            opacity: 0;
+            transform: rotateX(-90deg) ;
+            transform-origin: top;
+        }
+        100% {
+            opacity: 1;
+            transform: rotateX(0);
+        }
+    }
+    /*home-page resize*/
+    .hm-wel-icon, .hm-wel-call, .hm-feature-icon {
+        flex-direction: column;
+    }
+    .hm-wel-icon i, .hm-wel-call i, .hm-feature-icon img {
+        margin-bottom: 0.6rem;
+    }
+    .counter-col {
+        margin-bottom: 2rem;
+    }
+    /*about*/
+    .ab-card figcaption p {
+        height: 50%;
+        padding: 2rem 1rem;
+    }
+    /*figure.card-effect h2:hover {
+        display: none;
+    }*/
+     .dropdown-toggle::after {
+        display: none;
+     }
+}
+/* End dropdown menu */
+
+@media only screen and (max-width: 767px) {
+    .pro-row:nth-child(odd) .pro-wel-col-text {
+        padding-right: 15px;
+        text-align: center;
+    }
+    .pro-row:nth-child(even) .pro-wel-col-text {
+        padding-left: 15px;
+        text-align: center;
+    }
+    .main-wrapper {
+        margin-top: 145px;
+    }
+    .hm-wel-icon, .hm-wel-call, .hm-feature-icon {
+        flex-direction: row;
+        /*justify-content: space-around;*/
+    }
+    .hm-feature-same-h {
+        height: initial;
+    }
+    .hm-feature-wrap {
+        margin-bottom: 2rem;
+    }
+    .salient-sp-btm {
+        margin-bottom: -4rem;
+    }
+    .stabilizer-col {
+        margin-top: 3rem;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 575px) {
+    /*.pro-row img {
+        width: 50%;
+        height: auto;
+    }*/
+    .my-tab-joxim {
+        display: table;
+        margin: 0 auto;
+    }
+    .top-line-wrap a {
+        font-size: 12px;
+    }
+    .top-line-wrap {
+        text-align: center;
+    }
+    .hm-wel-icon, .hm-feature-icon {
+        flex-direction: row;
+    }
+    .hm-wel-call {
+        flex-direction: column;
+    }
+    .hm-wel-call i {
+        color: #f37021;
+        background-color: #fff;
+    }
+    .hm-wel-icon i {
+        font-size: 23px;
+        color: #f37021;
+        background-color: #fff;
+    }
+    #whatsapp-lg {
+        display: none;
+    }
+    #whatsapp-md {
+        display: block;
+    }
+    .hm-testimonial-wrap i {
+        font-size: 30px;
+        margin-right: initial;
+    }
+    .hm-star i {
+        font-size: 20px;
+    }
+    .hm-testimonial-title {
+        margin-left: 1.5rem;
+    }
+    /*about*/
+    .ab-card figcaption p, figure.card-effect h2, .ab-card figure, figure:hover h2 {
+        position: initial;
+        bottom: initial;
+        height: initial;
+        opacity: initial;
+        transform: initial;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .counter-count {
+        font-size: 35px;
+    }
+    .section-entry {
+        padding: 3rem 0 2.5rem;
+    }
+    .section-entry-top {
+        padding-top: 3rem;
+    }
+    .section-entry-bottom {
+        padding-bottom: 3rem;
+    }
+    .stabilizer-col {
+        margin-top: 0;
+    }
+    .salient-sp-btm {
+        margin-bottom: -1rem;
+    }
+    .icon-img {
+        display: none;
+    }
+    .joxim-table td, .joxim-table th {
+        font-size: 15px;
+    }
+    .details-fill-body tr td {
+        margin-top: 0;
+    }
+    .hm-why-icon-wrap:hover {
+        background-color : #f37021;
+    }
+    .hm-why-icon-wrap {
+         background-color : #f37021;
+    }
+    .hm-why-icon-wrap i {
+        background-color:white;
+        color : black;
+    }
+    .hm-why-icon-wrap h3{
+    color : white;
+    }
+    
+    .hm-why-icon-wrap p {
+        color : white;
+    }
+}
