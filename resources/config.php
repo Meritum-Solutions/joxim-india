@@ -13,7 +13,7 @@ defined("TEMPLATE_BACK") ? null : define("TEMPLATE_BACK", __DIR__ . DS . "templa
 $company = "Joxim India";
 
 // Localhost settings
- $path = '/projects/joxim/public/';
+ $path = '/public/';
  
  defined('DB_HOST') ? null : define('DB_HOST', 'localhost');
 
